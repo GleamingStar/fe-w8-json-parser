@@ -5,7 +5,7 @@ module.exports = {
   mode: 'development',
   entry: ['./public/JS/main.js', './public/SCSS/style.scss'],
   output: {
-    path: path.resolve(__dirname, 'public/JS/dist'),
+    path: path.resolve(__dirname, 'public'),
     filename: 'bundle.js',
   },
   module: {
@@ -26,7 +26,7 @@ module.exports = {
   devtool: 'inline-source-map',
   plugins: [
     new HtmlWebpackPlugin({
-      template: "public/index.html",
+      template: "public/src/index.html",
     }),
   ],
 };
